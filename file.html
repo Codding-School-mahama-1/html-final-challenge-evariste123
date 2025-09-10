@@ -14,11 +14,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color:orangered;
             padding: 2px;
             border-radius: 5px;
             margin: 18px;
             text-align: justify;
+            position: fixed;
            
         }
         .menu {
@@ -32,7 +33,7 @@
             transition: background 0.3s;
         }
         .menu a:hover{
-            background-color: blue;
+            background-color: green;
             border-radius: 5px;
         }
            .search-box{
@@ -51,27 +52,37 @@
             cursor:pointer;
         }
         .search-box button:hover{
-background-color: #777;
+background-color: blueviolet;
         }
         body{
-            background-color: brown;
+            background-color: yellow;
+            background: position 10%;;
             padding: 20px;
             margin: 1%;
             align-items: center;
             justify-content: center;
             text-align: center;
+            border-spacing: 10px;
+            background-origin: initial 1s;
+
+        }
+        .container{
+            border-radius: 20px;
+            border: none;
+            text-decoration: solid;
+            background-color: aqua;
+            color: blue;
         }
         .evariste{
             position: absolute;
             animation:3s;
-            bottom: 20;
-            margin-left:1%;
-            padding-bottom: 10%;
-            margin-bottom: 1%
+            border-radius: 5%;
+            box-shadow: #777;
+            justify-items: center;
         }
         footer{
             padding: 10px;
-            position: fixed;
+            position: relative;
             margin: 10px;
             bottom: 1%;
             width: 550px;
@@ -79,17 +90,18 @@ background-color: #777;
             color: blue;
             border-radius: 10px;
            text-align: top;
+           animation-direction: reverse;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="menu">
-            <a href="home">home</a>
-            <a href="service">service</a>
-         <a href="about">about</a>
-         <a href="contact">contact</a>
-         <a href="location">location</a>
+            <a href="home.html">home</a>
+            <a href="service.html">service</a>
+         <a href="about.html">about</a>
+         <a href="contact.html">contact</a>
+         <a href="location.html">location</a>
          <div class="search-box">
             <form action="https://www.google.come/search" target="_blank" method="get">
             <input type="text" name="search-box" id="search" placeholder="search...">
@@ -98,98 +110,105 @@ background-color: #777;
          </div>
          </div>
     </nav>
-    <hr>
-    <section id="main" style="width: 90vw;height: 8vh;background-color: aliceblue;text-align:left;border-radius: 10px;">
-    <select name="menu" id="menu" style="width: 10vw;height: 5vh; background-color: orangered; margin: 4px;padding: 4px; border-radius: 10px;">
-         <b><h6>select menu:</h6></b>
-        <option value="">--menu--</option>
-        <option value="menu">age</option>
-    </select>
-     </div>
+    <section id="advertising" style="width: 90vw;height: 20vh;background-color: orange;background-image: url('/image2/images.jpeg');">
+    </section>
+    
+    <section id="home.html" style="width: 90vw;height: 95vh; background-image:url('/image5/images\ \(2\).jpeg');text-align:left;border-radius: 10px;">
+    <div class="center">
+        <b><h4><span style="color: blue;">services we offers</span></h4></b>
+        </div>
+        <marquee behavior="right" direction="right">
+        <div id="container" style="width: 97vw;height: 10vh;margin: 20px;padding:10 px ; background-color: brown;border-radius: 5px;">
+            <b><i><h1>
+               web developer
+                 I am web developer and website hoster
+            </h1></i></b> 
+             </marquee>
+             <marquee behavior="left" direction="left">
+            <div id="container" style="width: 97vw;height: 10vh;margin: 20px;padding:10px ; background-color:white;border-radius: 5px;">
+            <b><i><h1>web desiner
+                 like create some website e-commerce
+            </h1></i></b> 
+            </marquee>
+            <marquee behavior="right" direction="right">
+        <div id="container" style="width: 135vw;height: 10vh;margin: 20px;padding:10 px ; background-color: brown;border-radius: 5px;">
+            <b><i><h1>
+              computer graphic designer.like photoshop,
+              creating graph,product designer
+            </h1></i></b> 
+             </marquee>
+        </div>
     </section>
     <hr>
-         <section id="section 1" style="width: 90vw; height: 60vh;background-image: url('imgage/Tue_19_08_2025_13_32_59.png');background-color: yellow; border-radius: 10px;">
+         <section id="service.html" style="width: 90vw; height: 60vh;background-image: url('/image2/images.jpeg');background-color: yellow; border-radius: 10px;">
         <marquee behavior="right" direction="right"><h1><b><span style="color: orange;">welcome to my website</span></b></h1></marquee>
-        <section id="section 4" style="width: 30vw;height: 30vh;background-color: #777;margin-left: 10px;padding: 10px; border-radius: 10px;">
+        <section id="about.html" style="width: 30vw;height: 30vh;background-image: url('/image5/images\ \(1\).jpeg');text-align: center; background-color: #777;margin-left: 170px;padding: 10px; border-radius: 10px;">
             <div id="text-align:center">
-            <b><h4>bapfekurera evariste.com</h4></b>
-            <b><h5>this is official website of evariste</h5></b>
+            <b><h4><span style="color: white;">bapfekurera evariste.com</span></h4></b>
+            <b><h5><span style="color: white;">this is official website of evariste 2025</span></h5></b>
             </div>
         </section>
-        </section>
-        <hr>
-         <section id="section 2" style="width: 90vw; height: 60vh;background-image: url('image1/eva.png');background-color: blue; border-radius: 10px;">
-             <b>I am evariste bapfekurera web developer on 2025</b>
+<hr>
+         <section id="contact.html" style="width: 90vw; height: 100vh;background-color:white; border-radius: 10px;">
+            A "welcome to my website" statement serves as an introductory 
+            greeting to visitors, quickly telling them what the site is about and 
+            what it offers. To be effective, it should provide a clear value proposition, 
+            use the brand's voice, and include clear calls-to-action.
+             A good welcome message encourages visitors to stay, explore,
+              and take the desired next step.  
+              <b><i><h2> What to Include in a Welcome Message</h2></i></b>
+              <ul><li>
+                Brand Voice: Let your brand's personality shine through in the message. 
+              </li>
+            <li> Concise Explanation: Briefly state what your website does or offers. </li>
+            <li> Call to Action (CTA): Guide visitors on what to do next, such as signing up,
+                 exploring a product, or contacting you. </li>
+            <li> Visuals: Support your message with compelling images or 
+                videos to make the site more engaging. </li>
+            <li> Incentives: Consider offering a discount, a free trial, 
+                or exclusive content to encourage further engagement. </li>
+            
+            </ul>
 
-        </section>
+    </section>
         <hr>
-        <section id="section 3" style="width: 90vw;height: 60vh;background-color: bisque;border-radius: 10px;">
-        
-             <b>we recorgnize every one to work own works</b>
-             <img class="evariste" src="/html-final-challenge-evariste123/homepage.html" alt="profile" style="width: 20vw; height: 25vh;border-radius: 10px;">
+        <section id="location.html" style="width: 90vw;height: 60vh;justify-content: center; background-color: bisque;border-radius: 10px;">
+          <b>I am evariste bapfekurera 
+            web developer on 2025.
+            here I can create more
+             website in few  day and 
+            to improve your followers 
+            channel in you tube and in your 
+            tiktok
+          </b>
+             
+             <img class="evariste" src="/image1/eva.png" alt="profile" style="width: 80px; height: 90px;border-radius: 80px;">
         </section>
     </div>
     <hr>
-    <iframe src="https://www.youtube.com/watch?v=xLaDy1WP3kQ&list=RDxLaDy1WP3kQ&start_radio=1&pp=oAcB" frameborder="10" width="500" height="500";border-radius: 10px;"></iframe>
-    <div class="iframe-area" id="iframe-area">
-        <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="10" width="500" height="400"></iframe>
-
-    </div>
-    <hr>
-    <section id="section-form" style="width: 90vw;height: 90vh;background-color: aqua;border-radius: 10px;">
+    <section id="section-form" style="width: 90vw;height: 90vh;background-image:url('/image5/images\ \(1\).jpeg');border-radius: 10px;">
     <div class="center" id="center">
         <form action="login-form">
             <div id="contact me">
                 <label for="contact me"><h2><b><span style="color: blue;">send me a message</span></b></h2></label>
                 </div>
         <label for="name">Name</label>
-        <div id="name">
-        <input type="text" id="name" name="name" required><br><br>
+        <div class="name">
+        <input type="text" name="name" required><br><br>
         </div>
         <label for="email">email</label>
-        <div id="email">
+        <div class="email">
         <input type="text" name="email" id="email" required><br>
         </div><br>
         <label for="message">message</label>
-        <div id="message">
-            <textarea name="message" id="message" rows="4" cols="32" placeholder="type here your message ..."></textarea>
-        </div>
+        <div class="message">
+           <textarea autofocus name="message"  cols="32" rows="3" placeholder="type here...." required></textarea>
+            </div><br>
         <input type="submit" value="submit">
         </form>
     </div>
     </section>
-    <hr>
-    <div class="table-area" id="table-area">
-        <table border="2">
-            <thead>
-                <tr>
-                <th colspan="3">student of coding school</th>
-                </tr>
-                </thead>
-                  <tbody>
-                    <th>name</th>
-                    <th>age</th>
-                    <th>location</th>
-                    <tr>
-                        <td>evariste</td>
-                        <td>20</td>
-                        <td>mahama</td>
-                    </tr>
-                    <tr>
-                        <td>claude</td>
-                        <td>22</td>
-                        <td>mahama</td>
-                    </tr>
-                    <tr>
-                        <td>billy</td>
-                        <td>25</td>
-                        <td>mahama</td>
-                    </tr>
-            </tbody>
-        </table>
-    </div>
-    <section id="footer" style="width: 90vw;height: 80vh;border-radius: 10px;">
-    <footer>
+      <footer>
         <div style=" font-size: 20px;background-color: aqua;border-radius: 10px;">
            <a href="home">home</a>
             <a href="service">service</a>
@@ -210,10 +229,9 @@ background-color: #777;
     <script type="text/javascript">
         alert("accept the permission to contuine with my website");
     </script>
-     <form id="sigin" style="width: 5vw;height: 5vh;background-color: blue;justify-items:center;margin:4px;padding: 4px;border-radius: 5px;">
-
-     </form>
+    <b>contact me:+250 785486547</b>
+    <b>email:bapfekureraevariste@gmail.com</b>
+    <b>location:kirehr-mahama</b>
       </footer>
-    </section>
 </body>
 </html>
