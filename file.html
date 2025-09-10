@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my simple website</title>
+    <link rel="stylesheet" href="/html-final-challenge-evariste123/homepage.html">
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin: 0;
+        }
+          .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 2px;
+            border-radius: 5px;
+            margin: 18px;
+            text-align: justify;
+           
+        }
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding: 2px;
+            transition: background 0.3s;
+        }
+        .menu a:hover{
+            background-color: blue;
+            border-radius: 5px;
+        }
+           .search-box{
+            display: flex;
+        }
+        .search-box iniput{
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-box button{
+            padding: 6px;
+            border: none;
+            background-color: blue;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        .search-box button:hover{
+background-color: #777;
+        }
+        body{
+            background-color: brown;
+            padding: 20px;
+            margin: 1%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .evariste{
+            position: absolute;
+            animation:3s;
+            bottom: 20;
+            margin-left:1%;
+            padding-bottom: 10%;
+            margin-bottom: 1%
+        }
+        footer{
+            padding: 10px;
+            position: fixed;
+            margin: 10px;
+            bottom: 1%;
+            width: 550px;
+            background: #777;
+            color: blue;
+            border-radius: 10px;
+           text-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu">
+            <a href="home">home</a>
+            <a href="service">service</a>
+         <a href="about">about</a>
+         <a href="contact">contact</a>
+         <a href="location">location</a>
+         <div class="search-box">
+            <form action="https://www.google.come/search" target="_blank" method="get">
+            <input type="text" name="search-box" id="search" placeholder="search...">
+            <button type="serach">search</button>
+            </form>
+         </div>
+         </div>
+    </nav>
+    <hr>
+    <section id="main" style="width: 90vw;height: 8vh;background-color: aliceblue;text-align:left;border-radius: 10px;">
+    <select name="menu" id="menu" style="width: 10vw;height: 5vh; background-color: orangered; margin: 4px;padding: 4px; border-radius: 10px;">
+         <b><h6>select menu:</h6></b>
+        <option value="">--menu--</option>
+        <option value="menu">age</option>
+    </select>
+     </div>
+    </section>
+    <hr>
+         <section id="section 1" style="width: 90vw; height: 60vh;background-image: url('imgage/Tue_19_08_2025_13_32_59.png');background-color: yellow; border-radius: 10px;">
+        <marquee behavior="right" direction="right"><h1><b><span style="color: orange;">welcome to my website</span></b></h1></marquee>
+        <section id="section 4" style="width: 30vw;height: 30vh;background-color: #777;margin-left: 10px;padding: 10px; border-radius: 10px;">
+            <div id="text-align:center">
+            <b><h4>bapfekurera evariste.com</h4></b>
+            <b><h5>this is official website of evariste</h5></b>
+            </div>
+        </section>
+        </section>
+        <hr>
+         <section id="section 2" style="width: 90vw; height: 60vh;background-image: url('image1/eva.png');background-color: blue; border-radius: 10px;">
+             <b>I am evariste bapfekurera web developer on 2025</b>
+
+        </section>
+        <hr>
+        <section id="section 3" style="width: 90vw;height: 60vh;background-color: bisque;border-radius: 10px;">
+        
+             <b>we recorgnize every one to work own works</b>
+             <img class="evariste" src="/html-final-challenge-evariste123/homepage.html" alt="profile" style="width: 20vw; height: 25vh;border-radius: 10px;">
+        </section>
+    </div>
+    <hr>
+    <iframe src="https://www.youtube.com/watch?v=xLaDy1WP3kQ&list=RDxLaDy1WP3kQ&start_radio=1&pp=oAcB" frameborder="10" width="500" height="500";border-radius: 10px;"></iframe>
+    <div class="iframe-area" id="iframe-area">
+        <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="10" width="500" height="400"></iframe>
+
+    </div>
+    <hr>
+    <section id="section-form" style="width: 90vw;height: 90vh;background-color: aqua;border-radius: 10px;">
+    <div class="center" id="center">
+        <form action="login-form">
+            <div id="contact me">
+                <label for="contact me"><h2><b><span style="color: blue;">send me a message</span></b></h2></label>
+                </div>
+        <label for="name">Name</label>
+        <div id="name">
+        <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <label for="email">email</label>
+        <div id="email">
+        <input type="text" name="email" id="email" required><br>
+        </div><br>
+        <label for="message">message</label>
+        <div id="message">
+            <textarea name="message" id="message" rows="4" cols="32" placeholder="type here your message ..."></textarea>
+        </div>
+        <input type="submit" value="submit">
+        </form>
+    </div>
+    </section>
+    <hr>
+    <div class="table-area" id="table-area">
+        <table border="2">
+            <thead>
+                <tr>
+                <th colspan="3">student of coding school</th>
+                </tr>
+                </thead>
+                  <tbody>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>location</th>
+                    <tr>
+                        <td>evariste</td>
+                        <td>20</td>
+                        <td>mahama</td>
+                    </tr>
+                    <tr>
+                        <td>claude</td>
+                        <td>22</td>
+                        <td>mahama</td>
+                    </tr>
+                    <tr>
+                        <td>billy</td>
+                        <td>25</td>
+                        <td>mahama</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <section id="footer" style="width: 90vw;height: 80vh;border-radius: 10px;">
+    <footer>
+        <div style=" font-size: 20px;background-color: aqua;border-radius: 10px;">
+           <a href="home">home</a>
+            <a href="service">service</a>
+         <a href="about">about</a>
+         <a href="contact">contact</a>
+         <a href="location">location</a>
+         </div>
+         <hr>
+  <p>&copy; copied by evariste bapfekurera on 2025.
+    privacy and policies
+    <hr>
+    <div style="font-size: 20px ;background-color: burlywood;border-radius: 10px;">
+        <span style="color: yellow;"><a href="https://github.com/evariste123"><button>github</button></a>
+        <a href="https://www.youtube.com/@evaristebapfekurera5995"><button>you tube</button></a>
+    <a href="https://www.facebook.com/evariste arrogent ever"><button>face book</button></a>
+<a href="https://www.linkedin.com/evariste bapfekurera"><button>linkedin</button></a></span>
+    </div>
+    <script type="text/javascript">
+        alert("accept the permission to contuine with my website");
+    </script>
+     <form id="sigin" style="width: 5vw;height: 5vh;background-color: blue;justify-items:center;margin:4px;padding: 4px;border-radius: 5px;">
+
+     </form>
+      </footer>
+    </section>
+</body>
+</html>
