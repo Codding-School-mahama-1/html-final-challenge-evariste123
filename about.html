@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple website</title>
+         <link rel="stylesheet" href="about.html">
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin: 0;
+        }
+          .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:orangered;
+            padding: 2px;
+            border-radius: 5px;
+            margin: 18px;
+            text-align: justify;
+            position: fixed;
+           
+        }
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding: 2px;
+            transition: background 0.3s;
+        }
+        .menu a:hover{
+            background-color: green;
+            border-radius: 5px;
+        }
+           .search-box{
+            display: flex;
+        }
+        .search-box iniput{
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-box button{
+            padding: 6px;
+            border: none;
+            background-color: blue;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        .search-box button:hover{
+background-color: blueviolet;
+        }
+         footer{
+            padding: 10px;
+            position: fixed;
+            margin: 10px;
+            bottom: 0;
+            background: #777;
+            color: blue;
+            border-radius: 10px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+     <nav class="navbar">
+        <div class="menu">
+            <a href="file.html">home</a>
+            <a href="service.html">service</a>
+         <a href="about.html">about</a>
+         <a href="contact.html">contact</a>
+         <a href="location.html">location</a>
+         <div class="search-box">
+            <form action="https://www.google.come/search" target="_blank" method="get">
+            <input type="text" name="search-box" id="search" placeholder="search...">
+            <button type="serach">search</button>
+            </form>
+         </div>
+         </div>
+    </nav>
+      <section>
+            <footer>
+          <div class="center" id="footer" style="width: 90vw;height: 20vh;background-image: url('/image5/images\ \(2\).jpeg');border-radius: 10px;">
+            <p>&copy;evariste</p>
+          </div>
+          </footer>
+         </section>
+</body>
+</html>
